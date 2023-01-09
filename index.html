@@ -103,23 +103,26 @@
       <div id="loading" class="justify-content-center mt-5">
         <div class="spinner-border text-primary" role="status"></div>
       </div>
-      <div id="theCard" class="d-none justify-content-center">
+      <div id="theCard" class="justify-content-center">
         <div
           class="card text-center shadow-lg"
           style="width: 18rem; height: 28rem"
         >
-          <img
-            src="#"
-            alt="Weather Picture"
-            style="width: 16rem; height: 10rem"
-            class="mb-5"
-          />
+          <div class="d-flex justify-content-center">
+            <img
+              src="#"
+              alt="Weather Picture"
+              style="width: 10rem; height: 10rem"
+              class="mt-3 mb-2"
+              id="cardPic"
+            />
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Location</h5>
+            <h5 class="card-title" id="cardLocation">Location</h5>
             <div id="currentTime" class="container">
-              <h2>Time</h2>
-              <h1>Temperature</h1>
-              <h3>Weather</h3>
+              <h2 id="cardTime">Time</h2>
+              <h1 id="cardTemp">Temperature</h1>
+              <h3 id="cardDescription">Weather</h3>
             </div>
           </div>
         </div>
